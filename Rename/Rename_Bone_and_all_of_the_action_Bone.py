@@ -24,6 +24,7 @@ armature = get_object(rename_bone_armature_name)
 
 bpy.ops.object.mode_set(mode = "EDIT")
 
+# Use this if you have manually changed the bone name of the action up to the halfway point.
 def Init_rev_bone_name_list():
     return [(b, a) for a, b in rename_bone_name_list]
     
