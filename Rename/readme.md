@@ -10,6 +10,15 @@ rename_bone_name_list = [
 ]
 ```
 
+Use `Init_rev_bone_name_list` if you have manually changed the bone name of the action up to the halfway point.<br>
+Please remove comments at line 32.<br>
+```python
+def Init_rev_bone_name_list():
+    return [(b, a) for a, b in rename_bone_name_list]
+    
+rev_rename_bone_name_list = Init_rev_bone_name_list()
+```
+
 NOTE: <br>
 For all animations, an operation is performed to change the pose of the armature and rename the bones, <br>
 so the If you are editing multiple armatures in the same file, <br>
