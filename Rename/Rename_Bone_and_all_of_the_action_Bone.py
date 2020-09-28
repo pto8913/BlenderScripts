@@ -1,4 +1,5 @@
 import bpy
+from typing import List, Tuple
 
 rename_bone_armature_name = "hoge"
 """ 
@@ -21,21 +22,24 @@ def get_object(name : str):
     
 armature = get_object(rename_bone_armature_name)
 
-if armature is None:
-    return
-
 bpy.ops.object.mode_set(mode = "EDIT")
 
-def rename_bones(): 
-    for name, nname in rename_bone_name_list:
+def Init_rev_bone_name_list():
+    return [(b, a) for a, b in rename_bone_name_list]
+    
+rev_rename_bone_name_list = Init_rev_bone_name_list()
+
+def rename_bones():
+    __rename_bones(rev_rename_bone_name_list)
+    __rename_bones(rename_bone_name_list)
+        
+def __rename_bones(TargetArr : List[Tuple]):
+    for name, nname in TargetArr:
         pb = armature.pose.bones.get(name)
-        #print(pb)
         if pb is None:
             continue
         pb.name = pb.name.replace(name, nname)
-        print(pb.name)
 
 for anim in bpy.data.actions:
-    print(armature.animation_data.action)
     armature.animation_data.action = anim
     rename_bones()
