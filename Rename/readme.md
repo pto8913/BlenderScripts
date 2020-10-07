@@ -1,8 +1,8 @@
 # Rename_Bone_and_all_of_the_action_Bone.py
 japanese : https://pto8913.hatenablog.com/entry/2020/09/28/132306<br>
 
-# Contents
-・[details rename_bone_name_list](#details rename_bone_name_list)
+# Table of content
+・[details rename_bone_name_list](#detailsrename_bone_name_list)
 
 # details rename_bone_name_list
 @rename_bone_armature_name : The bone name you want to rename. <br>
