@@ -3,6 +3,8 @@ japanese : https://pto8913.hatenablog.com/entry/2020/09/28/132306<br>
 
 # Table of content
 - [details rename_bone_name_list](#details_rename_bone_name_list)<br>
+- [NOTE](#NOTE)<br>
+- [Commentary](#Commentary)<br>
 
 # details_rename_bone_name_list
 @rename_bone_armature_name : The bone name you want to rename. <br>
@@ -15,12 +17,13 @@ rename_bone_name_list = [
 ]
 ```
 
+# NOTE
 NOTE: <br>
 For all animations, an operation is performed to change the pose of the armature and rename the bones, <br>
 so the If you are editing multiple armatures in the same file, <br>
 you can use Make a backup, create another file and append it before doing so, etc. <br>
 
-# Commentary.
+# Commentary
 **The bone names registered to the animation will automatically update the bone names registered to the animation by renaming the original bone with the pose active. **<br>.
 
 However, we need to repeat this process for all of our animations as they are only updated in the active pose. <br>.
