@@ -30,12 +30,12 @@ so the If you are editing multiple armatures in the same file, <br>
 you can use Make a backup, create another file and append it before doing so, etc. <br>
 
 # Commentary
-**The bone names registered to the animation will automatically update the bone names registered to the animation by renaming the original bone with the pose active. **<br>.
+**The bone names registered to the animation will automatically update the bone names registered to the animation by renaming the original bone with the pose active. **<br>
 
-However, we need to repeat this process for all of our animations as they are only updated in the active pose. <br>.
+However, we need to repeat this process for all of our animations as they are only updated in the active pose. <br>
 
-When the process is repeated, the original bone name has already been changed, so the original bone name is required to change the registered bone name in the animation. <br>.
+When the process is repeated, the original bone name has already been changed, so the original bone name is required to change the registered bone name in the animation. <br>
 
-So, `Init_rev_bone_name_list()` is used to create a list of unchanged bone names. <br>.
+So, `Init_rev_bone_name_list()` is used to create a list of unchanged bone names. <br>
 
-The update process is performed by using the list of unchanged bone names, renaming the active pose to the unchanged bone name, and then renaming it to the new bone name. <br>.
+The update process is performed by using the list of unchanged bone names, renaming the active pose to the unchanged bone name, and then renaming it to the new bone name. <br>
