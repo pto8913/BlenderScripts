@@ -2,9 +2,9 @@
 japanese : https://pto8913.hatenablog.com/entry/2020/09/28/132306<br>
 
 # Table of content
-・[details rename_bone_name_list](#detailsrename_bone_name_list)
+- [details rename_bone_name_list](#details_rename_bone_name_list)<br>
 
-# details rename_bone_name_list
+# details_rename_bone_name_list
 @rename_bone_armature_name : The bone name you want to rename. <br>
 @rename_bone_name_list : A list of tuples with the name you want to change and the new name. <br>
 e.g. <br>
