@@ -2,13 +2,17 @@
 japanese : https://pto8913.hatenablog.com/entry/2020/09/28/132306<br>
 
 # Table of content
+- [Usage](#Usage)<br>
 - [details rename_bone_name_list](#details_rename_bone_name_list)<br>
 - [NOTE](#NOTE)<br>
 - [Commentary](#Commentary)<br>
 
-# details_rename_bone_name_list
-@rename_bone_armature_name : The bone name you want to rename. <br>
-@rename_bone_name_list : A list of tuples with the name you want to change and the new name. <br>
+# Usage
+1. <br>
+Set `rename_bone_armature_name` to the name of the armature for which you want to rename the bone.<br>
+
+2. <br>
+Add a tuple to `rename_bone_name_list` with the bone name you want to change and the new bone name.<br>
 e.g. <br>
 ```python
 rename_bone_name_list = [
@@ -16,6 +20,9 @@ rename_bone_name_list = [
    ("Tail.006", "Tail.001")
 ]
 ```
+
+3. <br>
+run script.<br>
 
 # NOTE
 NOTE: <br>
